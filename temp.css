@@ -84,9 +84,13 @@ body {
     
   
     .active {
-      opacity: 0.5;
+      opacity: 1;
       transition: all 0.3s;
+      /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)); */
     }
+    /* .active::after{
+      background:rgba(0,0,0,0.6);
+    } */
   
     .center {
       opacity: 1;
@@ -262,4 +266,14 @@ figure img{width:300px;}
 
 .btn.bg-blue-ui.white.read:hover {
   box-shadow: 0px 5px 15px inset #4d5f77;
+}
+
+.w-100 d-block:after {
+  content:"";
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,0.6);
 }
